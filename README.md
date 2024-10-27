@@ -24,7 +24,7 @@ This project is a modern shopping cart application where users can add products 
 
 - Local Storage: For persistent cart data.
 
-<h2>Functions and Structure/h2>
+<h2>Functions and Structure</h2>
 
 - addToCart: Adds a product to the cart. If the product is already in the cart, increases its quantity.
 
