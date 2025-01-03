@@ -36,11 +36,13 @@ export function addToCart(event, products) {
       cart.push(cartItem);
       //* Ekleme yapılan cart'ın içeriğini güncelle.
       event.target.textContent = "Added";
-
-      saveToLocalStorage(cart);
-      updateCartIcon(cart);
-      displayCartTotal();
     }
+    //* Sepeti localStorage'a kaydet ve UI'yi güncelle
+    saveToLocalStorage(cart);
+    updateCartIcon(cart);
+    //* Sepeti tekrar render et ve güncellenen miktarı göster
+    renderCartItems();
+    displayCartTotal();
   }
 }
 //* Sepetten products silecek function
